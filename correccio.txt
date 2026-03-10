@@ -1,0 +1,31 @@
+Ex 1: 5/5
+
+Comentari:
+class playlist:
+
+    def __init__ ( self, song_list):
+        self.song_list = song_list  
+        song_list = []      ----------------> Aquesta línia no fa res
+
+
+Ex 2: 4,5/5
+La funció atacar(); conceptualment, no ha de retornar res (estàs retornant enemic.vida; però a quan crides aquesta funció no fas res amb aquesta informació que retornes)
+
+      def atacar ( self, enemic ):
+        enemic.vida -= self.forca
+            
+        if enemic.vida < 0 :
+                enemic.vida = 0
+        else :
+            print ( f"El personatge {enemic.nom} ha perdut {self.forca} punts de vida")
+        
+        return enemic.vida
+
+El que has posat és correcte, però només un petit comentari, pensa que hauries pogut utilitzar la funció "esta_viu" així:
+
+if personatge.esta_viu():
+    ...
+
+Ja que la funció et retorna True o False directament. ( no et cal: if personatge_esta_viu()==True: )
+
+Nota: 9,5/10
